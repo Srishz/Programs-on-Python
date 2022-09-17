@@ -1,0 +1,46 @@
+def calculator():
+  print("\nWelcome to calc: This is developed by Shrishthi Dixit")
+  operation=input("\nPlease type in the math operation you would like to complete:\n+ for addition\n- for subtraction\n** for exponent\n* for multiplication\n/ for division\n// for floor division\n% for modulo\n\nEnter your choice:")
+  num1=int(input())
+  num2=int(input())
+
+  if operation=='+':
+    if num1==56 and num2==9:
+      print(77)
+    elif num1==9 and num2==56:
+      print(77)
+    else:
+      print(num1+num2)
+  elif operation=="*":
+    if num1==45 and num2==3:
+      print(555)
+    elif num1==3 and num2==45:
+      print(555)
+    else:
+      print(num1*num2)
+  elif operation=="/":
+    if num1==56 and num2==6:
+      print(4)
+    else:
+      print(num1/num2)
+  elif operation=="//":
+    print(num1//num2)
+  elif operation=="**":
+    print(num1**num2)
+  elif operation=="-":
+    print(num1-num2)
+  else:
+    print("you entered an invalid key")
+    again()
+
+  def again():
+    cal_again=("do you want to calculate again? Press y for Yes and N for No.")
+
+    if cal_again=='y':
+      calculator()
+    elif cal_again=='n':
+      print("See you later")
+    else:
+      again()
+
+calculator()
