@@ -1,8 +1,9 @@
 def calculator():
+  '''this is a faulty calculator which will only return the wrong calculations for 56+9=77, 45*3 and 56/6=4'''
   print("\nWelcome to calc: This is developed by Shrishthi Dixit")
   operation=input("\nPlease type in the math operation you would like to complete:\n+ for addition\n- for subtraction\n** for exponent\n* for multiplication\n/ for division\n// for floor division\n% for modulo\n\nEnter your choice:")
-  num1=int(input())
-  num2=int(input())
+  num1=int(input("Enter first number: "))
+  num2=int(input("Enter second number: "))
 
   if operation=='+':
     if num1==56 and num2==9:
