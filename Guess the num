@@ -1,0 +1,19 @@
+n=18
+count=0
+
+while count<9:
+  num=int(input("Enter a number: "))
+  if num>n:
+    print("Guess a lower number")
+    count+=1
+    print("number of guesses left: ",(9-count))
+  elif num<n:
+    print("Guess a higher number")
+    count+=1
+    print("number of guesses left: ",(9-count))
+  else:
+    print("Bingo! That's a correct guess")
+    break
+if count==9 and num<n or num>n:
+
+  print("That's a wrong answer and you're left with no more guesses")
